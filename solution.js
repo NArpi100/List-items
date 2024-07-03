@@ -8,9 +8,9 @@ const port = 3000;
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: " ",
-  password: " ",
-  port: 5032,
+  database: " ", /* Create a database in pgAdmin and create a table based on the queries given in the queries.sql file */
+  password: " ", /* Put your pgAdmin password here */
+  port: 5032, /* This might differ for your server port number */
 });
 db.connect();
 
